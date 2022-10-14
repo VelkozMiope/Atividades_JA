@@ -19,12 +19,15 @@ programa
 		escreva("\n")
 		escreva("Insira o valor do produto: ")
 		leia(valor)
-		
-		escreva("\n")
-		escreva("Para pagamento a vista, digite 1, para outros meios, digite 2")
-		escreva("\n")
-		escreva("Insira o método de pagamento: ")
-		leia(tipo)
+
+		//Teste para saber se é a vista ou parcelado, caso nenhum, repete
+		faca{
+			limpa()
+			escreva("Para pagamento a vista, digite 1 \nPara parcelado, digite 2")
+			escreva("\n")
+			escreva("Insira o método de pagamento: ")
+			leia(tipo)
+		} enquanto (tipo != 1 e tipo != 2)
 
 		limpa()
 		
@@ -49,7 +52,7 @@ programa
 		escreva("O valor do produto é de: ", valor, " reais.")
 		escreva("\n")
 		escreva("\n")
-		escreva("Se o seu pagamento foi a vista, o seu desconto foi de ", desconto, " reais.")
+		escreva("O seu desconto foi de ", desconto, " reais.")
 		escreva("\n")
 		escreva("\n")
 		escreva("O valor com desconto do seu produto é de: ", valorF, " Reais.")
@@ -62,9 +65,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 436; 
+ * @POSICAO-CURSOR = 605; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {desconto, 16, 14, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
