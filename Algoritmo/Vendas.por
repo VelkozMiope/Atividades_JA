@@ -21,7 +21,8 @@ programa
 		leia(valor)
 
 		//Teste para saber se é a vista ou parcelado, caso nenhum, repete
-		faca{
+		faca
+		{
 			limpa()
 			escreva("Para pagamento a vista, digite 1 \nPara parcelado, digite 2")
 			escreva("\n")
