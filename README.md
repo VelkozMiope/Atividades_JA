@@ -1,4 +1,4 @@
-# Atividades_JA
+# Atividades Jovem Aprendiz Senac Tech
 Repositório de atividades feitas no Senac Tech, no programa Jovem Aprendiz.
 
 1. Algoritmo
