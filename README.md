@@ -9,3 +9,4 @@ Repositório de atividades feitas no Senac Tech, no programa Jovem Aprendiz.
    * Vendas: Cálculo de um valor com 10% de desconto caso o método de pagamento seja a vista, ou nenhum desconto caso seja outro método.
    * IRPF: Cálculo do IRPF, com 1 dependente, utilizando a tabela de 2022.
    * Matriz: Atividade de construção de matrizes.
+   * Notas_Quatro: Cálculo de 4 notas de 4 alunos, salvando nome e situação em vetores e as notas e a média em uma matriz.
