@@ -15,3 +15,4 @@ Repositório de atividades feitas no Senac Tech, no programa Jovem Aprendiz.
 06. IRPF: Cálculo do IRPF, com 1 dependente, utilizando a tabela de 2022.
 07. Matriz: Atividade de construção de matrizes.
 08. Notas_Quatro: Cálculo de 4 notas de 4 alunos, salvando nome e situação em vetores e as notas e a média em uma matriz.
+09. MenuSistema: Menu de sistema com switch case / do while.
