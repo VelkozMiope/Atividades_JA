@@ -20,27 +20,17 @@ programa
 			escreva ("Insira o nome do(a) aluno(a) ", a+1,": ")
 			leia (nomeAluno[a])
 			escreva ("\n")
-	
-			//Inserção das 4 notas do aluno
-			escreva ("Insira a 1ª nota do(a)", nomeAluno[a], ": \n")
-			leia(matriz[a][0])
-			escreva ("\n")
-			
-			escreva ("Insira a 2ª nota do(a)", nomeAluno[a], ": \n")
-			leia(matriz[a][1])
-			escreva ("\n")
-			
-			escreva ("Insira a 3ª nota do(a)", nomeAluno[a], ": \n")
-			leia(matriz[a][2])
-			escreva ("\n")
-			
-			escreva ("Insira a 4ª nota do(a)", nomeAluno[a], ": \n")
-			leia(matriz[a][3])
-			escreva ("\n")
-			
+			para(inteiro b = 0; b < 4; b++)
+			{
+				//Inserção das 4 notas do aluno
+				escreva ("Insira a ", b+1,"ª nota do(a) ", nomeAluno[a], ": ")
+				leia(matriz[a][b])
+				escreva ("\n")
+				matriz[a][4] += matriz[a][b]
+			}			
 			
 			//Calculo da média do aluno
-			matriz[a][4] = ((matriz[a][0] + matriz[a][1] + matriz[a][2] + matriz[a][3]) / 4)
+			matriz[a][4] /= 4
 			matriz[a][4] = Matematica.arredondar(matriz[a][4], 2)
 			
 			limpa()
@@ -66,10 +56,11 @@ programa
 	
 			//Notas do aluno
 			escreva (".: Notas :. \n")
-			escreva ("Nota 1: ", matriz[a][0], "\n")
-			escreva ("Nota 2: ", matriz[a][1], "\n")
-			escreva ("Nota 3: ", matriz[a][2], "\n")
-			escreva ("Nota 4: ", matriz[a][3], "\n")
+
+			para(inteiro b = 0; b < 4; b++)
+			{
+				escreva ("Nota ", b+1,": ", matriz[a][b], "\n")
+			}
 	
 			escreva ("\n")
 			escreva ("\n")
@@ -92,7 +83,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1912; 
+ * @POSICAO-CURSOR = 1284; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {nomeAluno, 8, 9, 9}-{situacao, 8, 23, 8}-{matriz, 11, 7, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
