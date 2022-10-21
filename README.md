@@ -3,7 +3,9 @@ Repositório de atividades feitas no Senac Tech, no programa Jovem Aprendiz.
 
 - **Testes**
 01. Algoritmo
-	01. MatrizTestes: Teste de menu no console, com base na atividade Matriz
+	01. MatrizTestes: Teste de menu no console, com base na atividade Matriz.
+	02. Ordem: Desafio proposto pelo professor Jair, de exibir um vetor aleatorio em ordem crescente e decrescente.
+	
 - **Algoritmo**
 01. Media_Notas: Cálculo da média de 4 notas de um aluno.
 02. Media_Notas_Vetores: Mesma atividade de antes, porém com melhorias utilizando laços de repetição e vetores.
