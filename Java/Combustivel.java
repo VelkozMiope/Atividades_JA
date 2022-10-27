@@ -5,16 +5,19 @@ public class Combustivel {
     public static void main(String args[]) {
         float rendimento, valor, distancia, consumo, valorG;
         String valorAux;
+        
+        //Inicializa o Scanner
         Scanner reader = new Scanner(System.in);
         
         System.out.println(".: Cálculo de consumo :.\n");
-        System.out.println("Insira o rendimento em KM/L do seu veículo: ");
+        System.out.print("Insira o rendimento em KM/L do seu veículo: ");
         rendimento = Float.parseFloat(reader.nextLine());
         System.out.println("\n");
         
-        System.out.println("Insira o valor do Litro/m³: ");
+        System.out.print("Insira o valor do Litro/m³: ");
         valorAux = reader.nextLine();
         
+        //Se o usuário inserir um valor com vírgula, o programa transforma ela em ponto antes de passar para Float
         if (valorAux.indexOf(",") != -1)
         {
             valorAux = valorAux.replace(",", ".");
@@ -22,7 +25,7 @@ public class Combustivel {
         valor = Float.parseFloat(valorAux);
         System.out.println("\n");
         
-        System.out.println("Insira a distância a percorrer, em KM: ");
+        System.out.print("Insira a distância a percorrer, em KM: ");
         distancia = Float.parseFloat(reader.nextLine());
         System.out.println("\n");
         
@@ -42,6 +45,5 @@ public class Combustivel {
         System.out.println("\n");
         
         System.out.printf("Para uma viagem de " + distancia + "KM, com um rendimento de " + rendimento + "KM/L e consumo de %.2f" + consumo + " litros, você irá gastar %.2f" + valorG + "R$.");
-        // TODO code application logic here
     }
 }
