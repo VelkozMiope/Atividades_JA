@@ -16,6 +16,7 @@ Repositório de atividades feitas no Senac Tech, no programa Jovem Aprendiz.
 07. Matriz: Atividade de construção de matrizes.
 08. Notas_Quatro: Cálculo de 4 notas de 4 alunos, salvando nome e situação em vetores e as notas e a média em uma matriz.
 09. MenuSistema: Menu de sistema com switch case / do while.
+10. menuAula: Menu de sistema para descrever os tópicos da aula do dia 27/10
 
 - **Java**
 
