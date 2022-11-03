@@ -24,3 +24,4 @@ Exercícios sem descrição são os mesmos já feitos em Portugol.
 
 01. Vendas
 02. Combustível
+03. INSS
