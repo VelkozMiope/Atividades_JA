@@ -1,3 +1,5 @@
+package aulaja;
+
 import java.util.Scanner;
 public class INSS {
 
@@ -64,8 +66,10 @@ public class INSS {
         
         System.out.println("\n.: INSS e Salário Líquido :.");
         System.out.println("\n");
-        System.out.printf("Seu salário é de: %.2f" + salario + "R$\n");
-        System.out.printf("Sua contribuição para o INSS é de: %.2f" + contribuicao + "R$\n");
-        System.out.printf("Seu salário líquido é de: %.2f" + resultado + "R$");
+        System.out.printf("Seu salário é de: %.2f", salario, "R$");
+        System.out.println("---");
+        System.out.printf("Sua contribuição para o INSS é de: %.2f", contribuicao, "R$");
+        System.out.println("---");
+        System.out.printf("Seu salário líquido é de: %.2f", resultado, "R$");
     }
 }
