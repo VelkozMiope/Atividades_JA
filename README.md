@@ -25,3 +25,4 @@ Exercícios sem descrição são os mesmos já feitos em Portugol.
 01. Vendas
 02. Combustível
 03. INSS
+04. EstruturaRepeticao: Revisão de estrututuras de repetição, utilizando como base as atividades de notas feitas no Portugol, mas com coisas extras como escolher o número de alunos, e poder atualizar as notas dos alunos.
