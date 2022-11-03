@@ -200,34 +200,30 @@ public class EstruturasRepeticao {
 
     private static void atualizarNotas() // Atualiza as notas no sistema, escolhendo o aluno a atualizar
     {
-        if (alunos[0] != null && notas[0][4] != 0.0) {
-
-            for (int i = 0; i < alunos.length; i++) {
-                System.out.println((i + 1) + " - " + alunos[i]);
-            }
-
-            System.out.println("Digite o id aqui: ");
-            int id = reader.nextInt();
-            if (notas[id-1][4] != 0.0) {
-                notas[id-1][4] = 0;
-            }
-            for (int i = 0; i < 4; i++) {
-                System.out.print("Informe a " + (i + 1) + "ª nota:");
-                notas[id - 1][i] = reader.nextFloat();
-                notas[id - 1][4] += notas[id][i];
-            }
-            notas[id-1][4] = mediaAluno(notas[id-1][4]);
-            System.out.print("Informe a frequência: ");
-            notas[id - 1][5] = reader.nextFloat();
-        } else {
-            System.out.println("Existem entradas sem alunos, por favor, utilize a primeira opção para adicionar todos os alunos!");
+        for (int i = 0; i < alunos.length; i++) {
+            System.out.println((i + 1) + " - " + alunos[i]);
         }
+
+        System.out.println("Digite o id aqui: ");
+        int id = reader.nextInt();
+        if (notas[id - 1][4] != 0.0) {
+            notas[id - 1][4] = 0;
+        }
+        for (int i = 0; i < 4; i++) {
+            System.out.print("Informe a " + (i + 1) + "ª nota:");
+            notas[id - 1][i] = reader.nextFloat();
+            notas[id - 1][4] += notas[id][i];
+        }
+        notas[id - 1][4] = mediaAluno(notas[id - 1][4]);
+        System.out.print("Informe a frequência: ");
+        notas[id - 1][5] = reader.nextFloat();
 
     } // Fim do atualizarNotas
 
-    private static float mediaAluno(float somaNotas) {
-        return somaNotas /4;
+    private static float mediaAluno(float somaNotas) // Pega o valor total e tira a média dele
+    {
+        return somaNotas / 4;
 
-    }
+    } // Fim média
 
 }
